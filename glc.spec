@@ -22,7 +22,7 @@ can use to record the output from opengl applications.
 %setup -q -n %{name}-%{version}
 
 %build 
-cmake -D CMAKE_INSTALL_PREFIX=%{_buildroot}/%{_prefix} .
+cmake -D CMAKE_INSTALL_PREFIX=%{buildroot}/%{_prefix} .
 %make
 
 %install 
