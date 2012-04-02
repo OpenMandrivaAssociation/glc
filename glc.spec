@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n %{name}
 %defattr(0755,root,root)
-%{_libdir}/*
+%{_libdir}/libglc*
 %{_includedir}/*
-%{_bindir}/*
+%{_bindir}/glc*
 
