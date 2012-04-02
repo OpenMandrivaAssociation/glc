@@ -23,7 +23,7 @@ can use to record the output from opengl applications.
 
 %build 
 cmake -D CMAKE_INSTALL_PREFIX=%{buildroot}/%{_prefix} LIB_INSTALL_DIR=%{buildroot}/%{_libdir} .
-%make
+%make libdir=%{buildroot}/%{_libdir}
 
 %install 
 rm -rf $RPM_BUILD_ROOT
