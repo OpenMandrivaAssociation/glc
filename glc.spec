@@ -22,8 +22,8 @@ can use to record the output from opengl applications.
 %setup -q -n %{name}-%{version}
 
 %build 
-cmake -D CMAKE_INSTALL_PREFIX=%{buildroot}/%{_prefix} LIB_INSTALL_DIR=%{buildroot}/%{_libdir} .
-%make libdir=%{buildroot}/%{_libdir}
+cmake -D CMAKE_INSTALL_PREFIX=%{buildroot}/%{_prefix} -DLIB_INSTALL_DIR=%{buildroot}/%{_libdir} .
+%make 
 
 %install 
 rm -rf $RPM_BUILD_ROOT
