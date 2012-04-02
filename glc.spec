@@ -12,7 +12,7 @@ Source0:		glc-0.5.8.tar.bz2
 ExclusiveArch:		i586 x86_64
 BuildRequires:		cmake png-devel x11-server-devel
 BuildRequires:		gcc gcc-c++ make libelfhacks libpacketstream mesagl-devel mesaglu-devel
-BuildRequires:		libao-devel libxxf86vm-devel libalsa2-devel
+BuildRequires:		libao-devel libxxf86vm-devel libalsa-devel
 
 %description	
 glc is an ALSA and OpenGL video capture tool that you 
