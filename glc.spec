@@ -28,7 +28,7 @@ cmake -D CMAKE_INSTALL_PREFIX=%{buildroot}/%{_prefix} -DLIB_INSTALL_DIR=%{buildr
 %install 
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
+mv %{buildroot}/%{_prefix}/%{_lib}/libglc* %{buildroot}/%{_libdir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
