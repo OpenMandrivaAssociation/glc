@@ -1,7 +1,7 @@
 %define name		glc
 Name:			%{name}
 Version:		0.5.8
-%define rel		1.1
+%define rel		1.2
 Release:		%mkrel %rel
 Summary:		ALSA and OpenGL video capture tool
 License:		MIT
