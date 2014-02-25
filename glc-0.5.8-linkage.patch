@@ -1,0 +1,12 @@
+diff -urN glc-0.5.8/src/glc/CMakeLists.txt glc-0.5.8-patched/src/glc/CMakeLists.txt
+--- glc-0.5.8/src/glc/CMakeLists.txt	2012-04-02 15:20:56.000000000 +1100
++++ glc-0.5.8-patched/src/glc/CMakeLists.txt	2014-02-25 23:57:56.016012391 +1100
+@@ -82,7 +82,7 @@
+ 
+ MACRO(ADD_GLC_LIBRARY NAME SOURCES LIBRARIES)
+   ADD_LIBRARY(${NAME} SHARED ${SOURCES})
+-  TARGET_LINK_LIBRARIES(${NAME} ${LIBRARIES})
++  TARGET_LINK_LIBRARIES(${NAME} ${LIBRARIES} -pthread)
+   SET_TARGET_PROPERTIES(${NAME} PROPERTIES
+   			OUTPUT_NAME ${NAME}
+   			VERSION ${GLC_VER}

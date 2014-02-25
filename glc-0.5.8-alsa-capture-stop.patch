@@ -1,0 +1,25 @@
+From a0551ab795a6fa516bb20eb4cc62b50d8e10511e Mon Sep 17 00:00:00 2001
+From: Pyry Haulos <pyry.haulos@gmail.com>
+Date: Tue, 2 Nov 2010 18:59:22 +0200
+Subject: [PATCH] Fix typo in alsa_capture_stop_all().
+
+---
+ src/hook/alsa.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/hook/alsa.c b/src/hook/alsa.c
+index 88b9eab..1f23acc 100644
+--- a/src/hook/alsa.c
++++ b/src/hook/alsa.c
+@@ -214,7 +214,7 @@ int alsa_capture_stop_all()
+ 
+ 	while (stream != NULL) {
+ 		if (stream->capture)
+-			alsa_capture_start(stream->capture);
++			alsa_capture_stop(stream->capture);
+ 		stream = stream->next;
+ 	}
+ 
+-- 
+1.8.5.5
+
