@@ -9,7 +9,7 @@
 Summary:	ALSA and OpenGL video capture tool
 Name:		glc
 Version:	0.5.8
-Release:	2
+Release:	3
 License:	MIT
 Group:		Video
 Url:		https://github.com/nullkey/glc
